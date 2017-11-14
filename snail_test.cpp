@@ -11,18 +11,18 @@ int main()
         //std::string token;
         std::cin >> n >> m;
         /*getline (std::cin, name);
-        std::stringstream ss(name);
-        while (ss >> token)
-        {
+           std::stringstream ss(name);
+           while (ss >> token)
+           {
                 printf("%s\n", token.c_str());
-        }
-        //std::cin.getline (name,256);
-        for (auto &i : name) {
+           }
+           //std::cin.getline (name,256);
+           for (auto &i : name) {
                 if (i == '\t' or i == '\n' or i == ' ' ) {
                         std::cout << "An error has accured while reading input data" << '\n';
                 }
-        }
-*/        //std::cout << name[0] << '\n';
+           }
+         *///std::cout << name[0] << '\n';
         int mat[n][m];
         int i=0, j, k = 0, p=1;
 
@@ -40,7 +40,6 @@ int main()
                         mat[j][m-k]=p++;
                         i++;
                 } /* --//-- По правому вертикальному столбцу*/
-
                 for (j=m-k-1; j>=k-1; j--)
                 {
                         mat[n-k][j]=p++;
