@@ -8,7 +8,8 @@ int main()
 
         unsigned int n,m;
         std::cout << "Введите размерность матрицы:" << '\n';
-        std::string token;
+        //std::string token;
+        std::cin >> n >> m;
         /*getline (std::cin, name);
         std::stringstream ss(name);
         while (ss >> token)
@@ -21,10 +22,10 @@ int main()
                         std::cout << "An error has accured while reading input data" << '\n';
                 }
         }
-        //std::cout << name[0] << '\n';
+*/        //std::cout << name[0] << '\n';
         int mat[n][m];
         int i=0, j, k = 0, p=1;
-*/
+
         while (i < n*m) /*Цикл по номеру витка*/
         {
                 k++;
